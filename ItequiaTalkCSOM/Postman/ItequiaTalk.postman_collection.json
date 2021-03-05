@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "a1c44385-88b9-4cb5-9608-11262d271feb",
+		"name": "ItequiaTalk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetListInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListItemsInLargeList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListItemsFiltered",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateListItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://itequia.sharepoint.com/sites/Sandbox\",\r\n    \"listName\" : \"ItequiaTalkList\",\r\n    \"title\": \"Item3\",\r\n    \"description\": \"Nueva descripción\",\r\n    \"number\": 3,\r\n    \"boolean\": false,\r\n    \"userOrGroup\": 26,\r\n    \"dateTime\": \"2017-09-08T16:08:19.290Z\",\r\n    \"sevilla\": [\"El sevilla es malo\", \"El sevilla es malardo\"],\r\n    \"choice\": \"Ole Betis\"\r\n        \r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:54688/CSOM/CreateItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54688",
+					"path": [
+						"CSOM",
+						"CreateItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateItem",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://itequia.sharepoint.com/sites/Sandbox\",\r\n    \"listName\" : \"ItequiaTalkList\",\r\n    \"title\": \"Item4\",\r\n    \"description\": \"Nueva descripción 4\",\r\n    \"number\": 4,\r\n    \"boolean\": false,\r\n    \"userOrGroup\": 27,\r\n    \"dateTime\": \"2017-10-08T16:08:19.290Z\",\r\n    \"sevilla\": [\"El sevilla es malardo\"],\r\n    \"choice\": \"Viva el Betis\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:54688/CSOM/UpdateItem/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54688",
+					"path": [
+						"CSOM",
+						"UpdateItem",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://itequia.sharepoint.com/sites/Sandbox\",\r\n    \"listName\" : \"ItequiaTalkList\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Permissions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BreakOrInherit",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:54688/CSOM/BreakOrInherit/3/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54688",
+					"path": [
+						"CSOM",
+						"BreakOrInherit",
+						"3",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GivePermission",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePermission",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
